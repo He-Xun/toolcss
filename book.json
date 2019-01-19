@@ -1,0 +1,29 @@
+{
+  "author": "hexun",
+  "description": "This is a book created by gitbook",
+  "extension": null,
+  "generator": "site",
+  "links": {
+    "sharing": {
+      "all": null,
+      "facebook": null,
+      "google": null,
+      "twitter": null,
+      "weibo": null
+    }
+  },
+  "output": null,
+  "plugins": [
+    "theme-comscore",
+    "chart",
+    "anchors",
+    "anchor-navigation-ex"
+  ],
+  "pluginsConfig": {
+    "anchor-navigation-ex": {
+      "showLevel": false
+    }
+  },
+  "title": "ToolCSS GitBook",
+  "variables": {}
+}

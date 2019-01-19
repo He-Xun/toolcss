@@ -1,0 +1,8 @@
+.scannerwork
+.idea
+node_modules
+./yarn.*
+./yarn*
+_book
+
+./demo/**/node_modules
