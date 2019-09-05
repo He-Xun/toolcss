@@ -14,6 +14,18 @@ yarn add --save-dev less-loader less
 npm install toolcss -S
 ```
 
+在vue中引用：
+```javascript
+//普通引用
+import 'toolcss/toolcss.css' 
+//不带mixin的全功能版本：
+import 'toolcss/toolcss_full.css' 
+//只引用mixin：
+import 'toolcss/toolcss_mixin.less' 
+//全量引用请:
+import 'toolcss/toolcss_max.less'  
+```
+
 
 
 #### 编辑此文档：
