@@ -4,13 +4,13 @@
 
 项目引用:
 ```bash
-yarn add --save-dev less-loader less
+yarn add less-loader less --save-dev 
 yarn add toolcss
 ```
 或者
 
 ```bash
-yarn add --save-dev less-loader less
+npm install  less-loader less --save-dev
 npm install toolcss -S
 ```
 
