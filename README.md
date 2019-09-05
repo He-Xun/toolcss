@@ -1,4 +1,4 @@
-![logo](.\images\toolcss_logo.png)
+![logo](./images/toolcss_logo.png)
 
 为了方便大家快速布局，标准化基本样式的目的。我把自己常用的css和规范做了个基本的梳理，分享给大家使用。包括布局、颜色、排版等常用模块。
 
@@ -39,7 +39,7 @@ gitbook serve
 
 markdown建议使用 [typora](https://www.typora.io/) 编辑
 
-![编辑界面](.\images\editor_guide.png)
+![编辑界面](./images/editor_guide.png)
 
 
 
