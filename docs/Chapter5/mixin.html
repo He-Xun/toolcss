@@ -1,0 +1,490 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>mixin · ToolCSS GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="hexun">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../Chapter4/typeset.html" />
+    
+
+    
+    <link rel="stylesheet" href="../gitbook/gitbook-plugin-chart/c3/c3.min.css">
+    <script src="../gitbook/gitbook-plugin-chart/c3/d3.min.js"></script>
+    <script src="../gitbook/gitbook-plugin-chart/c3/c3.min.js"></script>
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    ToolCSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Prologue/">
+            
+                <a href="../Prologue/">
+            
+                    
+                    Start
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Prologue/in-vuecli3.html">
+            
+                <a href="../Prologue/in-vuecli3.html">
+            
+                    
+                    vue-cli3.0中使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Chapter1/">
+            
+                <a href="../Chapter1/">
+            
+                    
+                    规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Chapter1/specificationhtml.html">
+            
+                <a href="../Chapter1/specificationhtml.html">
+            
+                    
+                    html规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Chapter1/specificationcss.html">
+            
+                <a href="../Chapter1/specificationcss.html">
+            
+                    
+                    css规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Chapter2/layout.html">
+            
+                <a href="../Chapter2/layout.html">
+            
+                    
+                    布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Chapter3/color.html">
+            
+                <a href="../Chapter3/color.html">
+            
+                    
+                    颜色
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Chapter4/typeset.html">
+            
+                <a href="../Chapter4/typeset.html">
+            
+                    
+                    排版/文本效果
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="mixin.html">
+            
+                <a href="mixin.html">
+            
+                    
+                    mixin
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >mixin</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#mixin"><b></b>mixin</a></li><ul><ul><li><span class="title-icon "></span><a href="#backgrounds-group"><b></b>Backgrounds Group</a></li><li><span class="title-icon "></span><a href="#transform-group"><b></b>Transform Group</a></li><li><span class="title-icon "></span><a href="#transition"><b></b>Transition</a></li><li><span class="title-icon "></span><a href="#animation-group"><b></b>Animation Group</a></li><li><span class="title-icon "></span><a href="#column"><b></b>Column</a></li><li><span class="title-icon "></span><a href="#misc-group"><b></b>Misc Group</a></li></ul></ul></ul></div><a href="#mixin" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="mixin"><a name="mixin" class="anchor-navigation-ex-anchor" href="#mixin"><i class="fa fa-link" aria-hidden="true"></i></a><a name="mixin" class="plugin-anchor" href="#mixin"><i class="fa fa-link" aria-hidden="true"></i></a>mixin</h1>
+<p>&#x8BF7;&#x5355;&#x72EC;&#x5F15;&#x5165; <a href="http://git.longhu.net/hexun/toolcss/blob/master/toolcss_mixin.less" target="_blank">toolcss_mixin.less</a> </p>
+<p>&#x9879;&#x76EE;&#x88C5;&#x597D;&#x5E76;&#x914D;&#x7F6E;less-loader  &#x76F4;&#x63A5;&#x5728;&#x4F60;&#x7684;classname&#x5F15;&#x7528;</p>
+<pre><code class="lang-css">   .classname{
+      .gradient-h ( #fff, #aaa );
+   }
+</code></pre>
+<h3 id="backgrounds-group"><a name="backgrounds-group" class="anchor-navigation-ex-anchor" href="#backgrounds-group"><i class="fa fa-link" aria-hidden="true"></i></a><a name="backgrounds-group" class="plugin-anchor" href="#backgrounds-group"><i class="fa fa-link" aria-hidden="true"></i></a>Backgrounds Group</h3>
+<p><strong>.gradient-h</strong> &#x7EB5;&#x5411;&#x6E10;&#x53D8;</p>
+<pre><code>  .gradient-h ( #fff, #aaa );
+</code></pre><p><strong>gradient-v</strong> &#x6C34;&#x5E73;&#x6E10;&#x53D8;</p>
+<pre><code>  .gradient-v ( #fff, #aaa );
+</code></pre><p><strong>.gradient-vline</strong>  &#x7EB5;&#x5411;&#x56DB;&#x8272;&#x6E10;&#x53D8;</p>
+<pre><code>  .gradient-vline ( #fff, #ddd, #aaa, #ddd );
+</code></pre><p><strong>.gradient-v3colors</strong>  &#x7EB5;&#x5411;&#x4E09;&#x8272;&#x6E10;&#x53D8;</p>
+<pre><code>  .gradient-v3colors ( #00b3ee, #7a43b6, 50%, #c3325f );
+</code></pre><p><strong>.gradient-radial</strong> &#x73AF;&#x5F62;&#x6E10;&#x53D8;</p>
+<pre><code>  .gradient-radial ( #fff, #aaa );
+</code></pre><p><strong>.gradient-direction</strong>  &#x81EA;&#x5B9A;&#x4E49;&#x89D2;&#x5EA6;&#x7684;&#x6E10;&#x53D8;</p>
+<pre><code>  .gradient-direction ( #fff, #aaa, 120 );
+</code></pre><p><strong>.bg-clip</strong> &#x80CC;&#x666F;&#x88C1;&#x5207;</p>
+<pre><code>  .bg-clip ( border-box );
+  .bg-clip ( border );
+</code></pre><p><strong>.bg-size</strong> &#x80CC;&#x666F;&#x5C3A;&#x5BF8;</p>
+<pre><code>  .bg-size ( 100%, 50% );
+</code></pre><h3 id="transform-group"><a name="transform-group" class="anchor-navigation-ex-anchor" href="#transform-group"><i class="fa fa-link" aria-hidden="true"></i></a><a name="transform-group" class="plugin-anchor" href="#transform-group"><i class="fa fa-link" aria-hidden="true"></i></a>Transform Group</h3>
+<p><strong>.transform</strong>  &#x53D8;&#x5F62;</p>
+<pre><code>  .transform ( perspective(0) translate3d(50px, 40px, 80px) scale3d(1, 2, 0) rotate3d(0, 1, 0, 45deg) );
+</code></pre><p><strong>.matrix</strong> &#x77E9;&#x9635;</p>
+<pre><code>  .matrix ( 0.9, 0.2, -0.5, 0.9, 0, 0 );
+</code></pre><p><strong>.matrix3d</strong> 3d&#x77E9;&#x9635;</p>
+<pre><code>  .matrix3d ( &quot;1, 0, 0, 0, 0, 0.60, 0, -0.0009, 0, 0, 1, 0, 0, 0, 0, 1&quot; );
+</code></pre><p><strong>.rotate</strong> &#x65CB;&#x8F6C;</p>
+<pre><code>  .rotate ( 45 );
+  .rotate ( x, 45 );
+  .rotate ( y, 45 );
+  .rotate ( z, 45 );
+</code></pre><p><strong>.rotate3d</strong> 3d&#x65CB;&#x8F6C;</p>
+<pre><code>  .rotate ( 15, 10, 5, 45 );
+</code></pre><p><strong>.scale</strong> &#x7F29;&#x653E;</p>
+<pre><code>  .scale ( 0.8 );
+  .scale ( x, 0.4 );
+  .scale ( y, 1.3 );
+  .scale ( z, .7 );
+</code></pre><p><strong>.scale3d</strong> 3d&#x7F29;&#x653E;</p>
+<pre><code>  .scale3d ( .4, .5, 1.2 );
+</code></pre><p><strong>.translate</strong> &#x4F4D;&#x79FB;</p>
+<pre><code>  .translate ( 20, 40 );
+  .translate ( x, 20 );
+  .translate ( y, 40 );
+  .translate ( z, 60 );
+</code></pre><p><strong>.translate3d</strong> 3d&#x4F4D;&#x79FB;</p>
+<pre><code>  .translate3d ( 20, 40, 60 );
+</code></pre><p><strong>.skew</strong> &#x626D;&#x66F2;</p>
+<pre><code>  .skew ( 30, 4 );
+  .skew ( x, 20 );
+  .skew ( y, -30 );
+</code></pre><p><strong>.perspective</strong> &#x900F;&#x89C6;</p>
+<pre><code>  .perspective ( 250 );
+  .perspective ( 250, px );
+</code></pre><p><strong>.perspective-origin</strong> &#x900F;&#x89C6;&#x6E90;</p>
+<pre><code>  .perspective-origin ( 50% 50% );
+</code></pre><p><strong>.transform-origin</strong> &#x53D8;&#x5F62;&#x6E90;</p>
+<pre><code>  .transform-origin ( 30%, 40%, 0 );
+</code></pre><p><strong>.transform-style</strong> &#x53D8;&#x5F62;&#x5F62;&#x5F0F;</p>
+<pre><code>  .transform-style ( preserve-3d );
+</code></pre><h3 id="transition"><a name="transition" class="anchor-navigation-ex-anchor" href="#transition"><i class="fa fa-link" aria-hidden="true"></i></a><a name="transition" class="plugin-anchor" href="#transition"><i class="fa fa-link" aria-hidden="true"></i></a>Transition</h3>
+<p><strong>.transition</strong> &#x8FC7;&#x6E21;&#x5C5E;&#x6027;&#x52A8;&#x753B;</p>
+<pre><code>  .transition ( width, .7s );
+  .transition ( property, 0.2s, ease-out, 0 );
+</code></pre><h3 id="animation-group"><a name="animation-group" class="anchor-navigation-ex-anchor" href="#animation-group"><i class="fa fa-link" aria-hidden="true"></i></a><a name="animation-group" class="plugin-anchor" href="#animation-group"><i class="fa fa-link" aria-hidden="true"></i></a>Animation Group</h3>
+<p><strong>.animate</strong> &#x52A8;&#x753B;</p>
+<pre><code>  .animate ( wobble );
+  .animate ( wobble, 2s, ease, 0, 1, normal );
+</code></pre><p><strong>.animation-state</strong> &#x52A8;&#x753B;&#x72B6;&#x6001;</p>
+<pre><code>  .animation-state ( running );
+</code></pre><h3 id="column"><a name="column" class="anchor-navigation-ex-anchor" href="#column"><i class="fa fa-link" aria-hidden="true"></i></a><a name="column" class="plugin-anchor" href="#column"><i class="fa fa-link" aria-hidden="true"></i></a>Column</h3>
+<p><strong>.columns</strong> &#x6587;&#x672C;&#x5206;&#x680F;</p>
+<pre><code>  .columns ( 2, normal );
+</code></pre><h3 id="misc-group"><a name="misc-group" class="anchor-navigation-ex-anchor" href="#misc-group"><i class="fa fa-link" aria-hidden="true"></i></a><a name="misc-group" class="plugin-anchor" href="#misc-group"><i class="fa fa-link" aria-hidden="true"></i></a>Misc Group</h3>
+<p><strong>.opacity</strong> &#x900F;&#x660E;&#x5EA6;</p>
+<pre><code>  .opacity ( 0.7 );
+</code></pre><p><strong>.font</strong> &#x5B57;</p>
+<pre><code>  .font ( italic, normal, bold, 14px, 1, &quot;&apos;Lucida Grande&apos;, Helvetica, Arial, Verdana, sans-serif&quot; );
+</code></pre><p><strong>.font-face</strong> &#x5B57;&#x4F53;</p>
+<pre><code>  .font-face ( MyFontName, &quot;../assets/fonts/sofia-pro&quot; );
+</code></pre><p><strong>.size</strong> &#x5BBD;&#x9AD8;</p>
+<pre><code>  .size ( 400, 200 );
+</code></pre><p><strong>.square</strong> &#x6B63;&#x65B9;&#x5F62;</p>
+<pre><code>  .square ( 400 );
+</code></pre><p><strong>.cirecle</strong> &#x5706;&#x5F62;</p>
+<pre><code>  .cirecle ( 200 );
+</code></pre><p> <strong>.triangle</strong> &#x4E09;&#x89D2;&#x5F62;</p>
+<pre><code>  .square (30,30,#red,t);
+  .square (30,30,#red,r);
+  .square (30,30,#red,b);
+  .square (30,30,#red,l);
+  .square (30,30,#red,tl);
+  .square (30,30,#red,tr);
+  .square (30,30,#red,br);
+  .square (30,30,#red,bl);
+</code></pre><p><strong>.resizable</strong>  &#x53EF;&#x8C03;&#x5BBD;&#x9AD8;&#xFF08;&#x7528;&#x4E8E;&#x6587;&#x672C;&#x57DF;&#xFF09;</p>
+<pre><code>  .resizable ( both );
+  .resizable ( vertical );
+  .resizable ( horizontal );
+</code></pre><p><strong>.hide-text</strong> &#x9690;&#x85CF;&#x6587;&#x672C;</p>
+<pre><code>  .hide-text;
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../Chapter4/typeset.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 排版/文本效果">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"mixin","level":"1.7","depth":1,"previous":{"title":"排版/文本效果","level":"1.6","depth":1,"path":"Chapter4/typeset.md","ref":"Chapter4/typeset.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","-lunr","search-pro","theme-comscore","chart","anchors","anchor-navigation-ex","-sharing","sharing-plus","chapter-fold","splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"sharing":{"qq":true,"all":["douban","facebook","google","instapaper","linkedin","twitter","weibo","messenger","qq","qzone","viber","whatsapp"],"douban":false,"facebook":false,"weibo":true,"twitter":false,"pocket":false,"google":false,"qzone":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"chart":{"type":"c3"}},"theme":"default","author":"hexun","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ToolCSS GitBook","gitbook":"*","description":"This is a book created by gitbook","extension":null},"file":{"path":"Chapter5/mixin.md","mtime":"2019-01-11T10:12:48.056Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-05T05:48:42.459Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
