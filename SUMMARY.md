@@ -8,6 +8,6 @@
     * [css规范](Chapter1/specificationcss.md)
 * [布局](Chapter2/layout.md)
 * [颜色](Chapter3/color.md)
-* [排版](Chapter4/typeset.md)
+* [排版/文本效果](Chapter4/typeset.md)
 * [mixin](Chapter5/mixin.md)
 

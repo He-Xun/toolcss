@@ -3,25 +3,47 @@
   "description": "This is a book created by gitbook",
   "extension": null,
   "generator": "site",
-  "links": {
-    "sharing": {
-      "all": null,
-      "facebook": null,
-      "google": null,
-      "twitter": null,
-      "weibo": null
-    }
-  },
   "output": null,
   "plugins": [
+    "-search",
+    "-lunr",
+    "search-pro",
     "theme-comscore",
     "chart",
     "anchors",
-    "anchor-navigation-ex"
+    "anchor-navigation-ex",
+    "-sharing",
+    "sharing-plus",
+    "chapter-fold",
+    "splitter"
   ],
   "pluginsConfig": {
     "anchor-navigation-ex": {
       "showLevel": false
+    },
+    "sharing": {
+      "douban": false,
+      "facebook": false,
+      "google": false,
+      "pocket": false,
+      "qq": true,
+      "qzone": true,
+      "twitter": false,
+      "weibo": true,
+      "all": [
+        "douban",
+        "facebook",
+        "google",
+        "instapaper",
+        "linkedin",
+        "twitter",
+        "weibo",
+        "messenger",
+        "qq",
+        "qzone",
+        "viber",
+        "whatsapp"
+      ]
     }
   },
   "title": "ToolCSS GitBook",
